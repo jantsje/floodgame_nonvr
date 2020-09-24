@@ -1,0 +1,38 @@
+{% extends "floodgame_nonvr/Page.html" %}
+{% load staticfiles otree_tags %}
+{% load i18n %}
+{% block title %}
+    {% trans "Welcome" %}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:5%;">
+  <span class="sr-only">5% </span>
+  </div>
+</div>
+
+<img width="100%" src="{% static 'floodgame_nonvr/banner_'|add:language_code|add:'.jpg' %}"/>
+
+<br> <br>
+<div class="card"> <div class="card-body"><p>
+    {% blocktrans trimmed %}
+        We invite you to participate in a survey about measures homeowners can take to reduce damages from flooding. <br>
+        You do not need any experience with flooding or damage reducing measures to participate in this research.
+    {% endblocktrans %}
+<br> <br> <b>
+{% blocktrans trimmed %}
+    Note that throughout the survey, there is no button to go back to a previous page.
+{% endblocktrans %}</b>
+</p></div></div>
+
+<button class="btn btn-primary btn-right btn-lg" >
+{% trans "Start" %}
+</button>
+{{ form.errors }}
+
+{% endblock %}
+
+
