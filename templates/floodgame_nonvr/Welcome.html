@@ -28,6 +28,45 @@
 {% endblocktrans %}</b>
 </p></div></div>
 
+       <div class="card alert alert-info" role="alert"><div class="card-body"><p>
+
+
+       Al uw antwoorden zijn strikt vertrouwelijk en zullen niet voor commerciële doeleinden worden gebruikt.
+<br>
+       Allereerst twee vragen om te bevestigen dat u in de juiste doelgroep valt.
+<br>
+       <br> <strong>Bent u eigenaar van het huis of appartement waarin u woont?</strong>
+
+{% for field in form %}
+       {% if field.name == "homeowner" %}</p><p>
+            <input type="radio" required name="homeowner" value=True id="1"> Ja (koophuis) &nbsp;
+            <input type="radio"  name="homeowner" value=False id="0"> Nee (huurwoning)
+       <br>
+              {% endif %}
+       {% endfor %}
+
+<br>
+<strong>
+       {% blocktrans trimmed %}
+           What is your zipcode?
+       {% endblocktrans %}
+</strong>
+
+   </b></p>
+
+
+       <div class="row"><div class="col-md-2"><input class="form-control" name="zip_code_nrs" type="text" autocomplete="off" pattern="[0-9]{4}" placeholder="1234" required></div>
+           <div class="col-md-2"><input class="form-control" name="zip_code_letters" autocomplete="off" placeholder="AB" pattern="[A-z]{2}" required></div>
+
+
+
+           </div>
+
+       </div>
+
+   </div>
+</p></div>
+
 <button class="btn btn-primary btn-right btn-lg" >
 {% trans "Start" %}
 </button>

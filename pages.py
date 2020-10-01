@@ -55,6 +55,7 @@ class Spelpagina(Page):
 
 class Welcome(Page):
     form_model = 'player'
+    form_fields = ['homeowner', 'zip_code_nrs', 'zip_code_letters']
 
     def vars_for_template(self):
         return {'participation_fee': self.session.config['participation_fee'],
@@ -74,7 +75,7 @@ class Start(Page):
         if self.round_number == 2:
             return ['flood_prob', 'water_levels', 'expected_damage']
         elif self.round_number == 3:
-            return ['worry', 'trust_dikes']
+            return ['worry', 'trust_dikes', 'concern', 'worry_covid']
 
     def is_displayed(self):
         return 1 < self.round_number <= Constants.num_start_pages
