@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-01 09:46+0200\n"
+"POT-Creation-Date: 2020-10-02 16:41+0200\n"
 "PO-Revision-Date: 2020-10-01 09:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -230,7 +230,7 @@ msgstr ""
 msgid "What is the highest level of education you have completed?"
 msgstr "Wat is uw hoogst voltooide opleiding?"
 
-#: .\models.py:251 .\templates\floodgame_nonvr\Welcome.html:50
+#: .\models.py:251 .\templates\floodgame_nonvr\Welcome.html:53
 msgid "What is your zipcode?"
 msgstr "Wat is uw postcode?"
 
@@ -529,8 +529,8 @@ msgid ""
 "Aside from the cost, how difficult is it to take flood protection measures "
 "that limit flood damage for your current home?"
 msgstr ""
-"Afgezien van de kosten, hoe moeilijk is het om "
-"(overstromings)schadebeperkende maatregelen te nemen voor uw huidige woning?"
+"Afgezien van de kosten, hoe moeilijk is het om (overstromings)"
+"schadebeperkende maatregelen te nemen voor uw huidige woning?"
 
 #: .\models.py:448
 msgid "test scenario"
@@ -580,6 +580,7 @@ msgid "This was the final page."
 msgstr "Dit was de laatste pagina."
 
 #: .\templates\floodgame_nonvr\Complete.html:27
+#: .\templates\floodgame_nonvr\Thanks.html:25
 msgid "Close this window"
 msgstr "Sluit dit venster"
 
@@ -900,8 +901,8 @@ msgid ""
 "computer will randomly select someone after all respondents have finished "
 "the survey."
 msgstr ""
-"Het bedrag op uw spaarrekening op de laatste pagina was  <strong>"
-"%(payoff_scenario1)s</strong>. Mocht u worden geselecteerd voor de grote "
+"Het bedrag op uw spaarrekening op de laatste pagina was  <strong>%"
+"(payoff_scenario1)s</strong>. Mocht u worden geselecteerd voor de grote "
 "betaling, dan krijgt u <strong>%(payoff)s</strong>. (De omrekenfactor is 100 "
 "ECU = &euro;1).</p> <p>Iedere deelnemer heeft evenveel kans om geselecteerd "
 "te worden voor deze grote betaling. De computer zal willekeurig iemand "
@@ -1027,7 +1028,15 @@ msgstr ""
 "Er is in deze vragenlijst geen mogelijkheid om terug te gaan naar de vorige "
 "pagina."
 
-#: .\templates\floodgame_nonvr\Welcome.html:71
+#: .\templates\floodgame_nonvr\Welcome.html:43
+msgid "Yes (homeowner)"
+msgstr "Ja (huiseigenaar)"
+
+#: .\templates\floodgame_nonvr\Welcome.html:45
+msgid "No (tenant)"
+msgstr "Nee (huurder)"
+
+#: .\templates\floodgame_nonvr\Welcome.html:74
 msgid "Start"
 msgstr "Start"
 
@@ -1630,12 +1639,6 @@ msgstr ""
 #~ msgid "Do you own the house or apartment you live in?"
 #~ msgstr "Bent u de eigenaar van het huis of appartement waarin u woont?"
 
-#~ msgid "Yes (homeowner)"
-#~ msgstr "Ja (huiseigenaar)"
-
-#~ msgid "No (tenant)"
-#~ msgstr "Nee (huurder)"
-
 #~ msgid "What was the flood probability in the test scenario?"
 #~ msgstr "Wat was de kans op een overstroming in het oefenscenario?"
 
@@ -1755,8 +1758,8 @@ msgstr ""
 #~ msgstr ""
 #~ "Voordat u uw eigen beslissing neemt, willen we graag weten wat u denkt "
 #~ "dat andere deelnemers zullen kiezen. Deze inschatting is een andere "
-#~ "beslissing dan uw eigen investeringsbeslissing. </p><hr class="
-#~ "\"my-4\"><p>Probeer zo nauwkeurig mogelijk te voorspellen. Wanneer uw "
+#~ "beslissing dan uw eigen investeringsbeslissing. </p><hr class=\"my-4"
+#~ "\"><p>Probeer zo nauwkeurig mogelijk te voorspellen. Wanneer uw "
 #~ "inschatting tot op de procent juist blijkt te zijn, komt u in aanmerking "
 #~ "voor een extra bonus."
 

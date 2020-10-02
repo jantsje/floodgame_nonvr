@@ -39,8 +39,11 @@
 
 {% for field in form %}
        {% if field.name == "homeowner" %}</p><p>
-            <input type="radio" required name="homeowner" value=True id="1"> Ja (koophuis) &nbsp;
-            <input type="radio"  name="homeowner" value=False id="0"> Nee (huurwoning)
+            <input type="radio" required name="homeowner" value=True id="1">
+           <label for="1">{% trans "Yes (homeowner)" %}  </label>
+            <input type="radio"  name="homeowner" value=False id="0">
+           <label for="0">{% trans "No (tenant)" %}</label>
+
        <br>
               {% endif %}
        {% endfor %}
