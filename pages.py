@@ -27,6 +27,24 @@ class WaitPage(TransMixin, WaitPage):
     pass
 
 
+class No(Page):
+
+    def dispatch(self, request, *args, **kwargs):
+        from otree.models import Participant
+        participant = Participant.objects.get(code=kwargs.get('participant_code'))
+        if request.method == 'GET':
+            address = 'https://pi.panelinzicht.nl/redirect/index.php/veldwerk/survey/return?p=nt&survey_id=PNI20201040-I&H68Q8siV6g=39677&imid=' + str(participant.label)
+            # screen-out (not in target group)
+            return HttpResponseRedirect(address)
+        return super(Page, self).dispatch(request, *args, **kwargs)
+
+    form_model = 'player'
+
+    def is_displayed(self):
+        return self.round_number == 1 and not self.player.participant.vars["target_group"] and not \
+            self.session.vars["quota_full"]
+
+
 def vars_for_all_templates(self):
     player = self.player
     participant = self.participant
@@ -55,7 +73,7 @@ class Spelpagina(Page):
 
 class Welcome(Page):
     form_model = 'player'
-    form_fields = ['homeowner', 'zip_code_nrs', 'zip_code_letters']
+    form_fields = ['homeowner', 'zip_code_nrs', 'zip_code_letters', 'floor_size']
 
     def vars_for_template(self):
         return {'participation_fee': self.session.config['participation_fee'],
@@ -66,6 +84,36 @@ class Welcome(Page):
 
     def before_next_page(self):
         self.player.browser = self.request.META.get('HTTP_USER_AGENT')
+        self.player.check_quota()
+        self.player.check_target_group()
+
+
+class Consent(Page):
+    form_model = 'player'
+    form_fields = ['opened', 'consent']
+
+    def is_displayed(self):
+        return self.round_number == 1 and not self.session.vars["quota_full"] and \
+               self.player.participant.vars["target_group"]
+
+    def before_next_page(self):
+        self.player.store_consent()
+
+
+class Full(Page):
+    form_model = 'player'
+
+    def is_displayed(self):
+        return self.participant.vars["quota_full"]
+
+    def dispatch(self, request, *args, **kwargs):
+        from otree.models import Participant
+        participant = Participant.objects.get(code=kwargs.get('participant_code'))
+        if request.method == 'GET':
+            address = 'https://pi.panelinzicht.nl/redirect/index.php/veldwerk/survey/return?p=full&survey_id=PNI20201040-I&H68Q8siV6g=39677&imid=' + str(participant.label)
+            # quota-full link here
+            return HttpResponseRedirect(address)
+        return super(Page, self).dispatch(request, *args, **kwargs)
 
 
 class Start(Page):
@@ -89,6 +137,9 @@ class FinalQuestions(Page):
 
     def before_next_page(self):
         self.player.store_follow_up()
+        if self.round_number == 12:
+            self.player.store_complete()
+            print(self.player.participant.vars["completed"], "completed")
 
     def get_form_fields(self):
         if self.round_number == 5:
@@ -268,11 +319,31 @@ class Thanks(Page):
         return {'page_title': _('Thanks for your participation')}
 
     def is_displayed(self):
-        return self.round_number == Constants.num_rounds
+        return self.player.participant.vars["completed"] and self.session.config['demo']
+
+
+class Complete(Page):
+
+    def dispatch(self, request, *args, **kwargs):
+        from otree.models import Participant
+        participant = Participant.objects.get(code=kwargs.get('participant_code'))
+        if request.method == 'GET':
+            address = 'https://pi.panelinzicht.nl/redirect/index.php/veldwerk/survey/return?p=ok&survey_id=PNI20201040-I&H68Q8siV6g=39677&imid=' + str(participant.label)
+            # complete link here
+            return HttpResponseRedirect(address)
+        return super(Page, self).dispatch(request, *args, **kwargs)
+
+    form_model = 'player'
+
+    def is_displayed(self):
+        return not self.session.config['demo'] and self.player.participant.vars["completed"]
 
 
 page_sequence = [
     Welcome,
+    Full,
+    No,
+    Consent,
     Start,
     Scenario,
     Instructions,
@@ -284,4 +355,5 @@ page_sequence = [
     Results,
     FinalQuestions,
     Thanks,
+    Complete
 ]

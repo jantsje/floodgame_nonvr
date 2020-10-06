@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-02 16:41+0200\n"
+"POT-Creation-Date: 2020-10-06 17:21+0200\n"
 "PO-Revision-Date: 2019-10-09 15:49-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -26,7 +26,7 @@ msgstr "Respuesta incorrecta. Por favor inténtelo de nuevo."
 msgid "You still need to answer this question."
 msgstr "Aún tiene que responder a esta pregunta."
 
-#: .\models.py:176
+#: .\models.py:179
 msgid ""
 "How easy or difficult was it to make a choice in the investment game you "
 "just played?"
@@ -34,87 +34,87 @@ msgstr ""
 "¿Qué tan fácil o difícil fue tomar la decisión en el juego de inversión en "
 "el que acaba de participar?"
 
-#: .\models.py:177 .\models.py:396
+#: .\models.py:180 .\models.py:402
 msgid "Very easy"
 msgstr "Muy fácil"
 
-#: .\models.py:178 .\models.py:397
+#: .\models.py:181 .\models.py:403
 msgid "Somewhat easy"
 msgstr "Algo fácil"
 
-#: .\models.py:179 .\models.py:398
+#: .\models.py:182 .\models.py:404
 msgid "Neither easy/nor difficult"
 msgstr "Ni fácil/ni difícil"
 
-#: .\models.py:180 .\models.py:399
+#: .\models.py:183 .\models.py:405
 msgid "Somewhat difficult"
 msgstr "Algo difícil"
 
-#: .\models.py:181 .\models.py:400
+#: .\models.py:184 .\models.py:406
 msgid "Very difficult"
 msgstr "Muy difícil"
 
-#: .\models.py:187
+#: .\models.py:190
 msgid "Please briefly explain how you made decisions in the investment game."
 msgstr ""
 "Por favor, explique brevemente cómo tomó sus decisiones en el juego de "
 "inversión."
 
-#: .\models.py:189
+#: .\models.py:192
 msgid "What is your age?"
 msgstr "¿Cuál es su edad?"
 
-#: .\models.py:190
+#: .\models.py:193
 msgid "years"
 msgstr "años"
 
-#: .\models.py:192
+#: .\models.py:195
 msgid "Male"
 msgstr "Masculino"
 
-#: .\models.py:192
+#: .\models.py:195
 msgid "Female"
 msgstr "Femenino"
 
-#: .\models.py:193
+#: .\models.py:196
 msgid "What is your gender?"
 msgstr "¿Sexo?"
 
-#: .\models.py:198
+#: .\models.py:201
 msgid ""
 "What is the likelihood that your home will be flooded in the next 25 years?"
 msgstr ""
 "¿Cuál es la probabilidad de que su casa se inunde en los próximos 25 años?"
 
-#: .\models.py:199
+#: .\models.py:202
 msgid "The probability is zero"
 msgstr "Probabilidad nula"
 
-#: .\models.py:200
+#: .\models.py:203
 msgid "Very low"
 msgstr "Muy baja"
 
-#: .\models.py:201
+#: .\models.py:204
 msgid "Low"
 msgstr "Baja"
 
-#: .\models.py:202
+#: .\models.py:205
 msgid "Not low/not high"
 msgstr "Ni baja/ni alta"
 
-#: .\models.py:203
+#: .\models.py:206
 msgid "High"
 msgstr "Alta"
 
-#: .\models.py:204
+#: .\models.py:207
 msgid "Very high"
 msgstr "Muy alta"
 
-#: .\models.py:205 .\models.py:379 .\models.py:389 .\models.py:401
+#: .\models.py:208 .\models.py:385 .\models.py:395 .\models.py:407
 msgid "Don't know"
 msgstr "No sé"
 
-#: .\models.py:209
+#: .\models.py:212
 msgid ""
 "Imagine your neighborhood is flooded. What height do you think the water "
 "would reach in your home?"
@@ -122,31 +122,31 @@ msgstr ""
 "Imagina que tu vecindario se inunda. ¿Qué altura crees que alcanzaría el "
 "agua en tu casa?"
 
-#: .\models.py:210
+#: .\models.py:213
 msgid "The water would not reach my home"
 msgstr "El agua no llegaría a mi casa"
 
-#: .\models.py:211
+#: .\models.py:214
 msgid "Low (1-10 cm)"
 msgstr "Bajo (1-10 cm)"
 
-#: .\models.py:212
+#: .\models.py:215
 msgid "Pretty high (10-50 cm)"
 msgstr "Bastante alto (10-50 cm)"
 
-#: .\models.py:213
+#: .\models.py:216
 msgid "Fairly high (50-100 cm)"
 msgstr "Relativamente alto (50-100 cm)"
 
-#: .\models.py:214
+#: .\models.py:217
 msgid "High (1-2 meter)"
 msgstr "Alto"
 
-#: .\models.py:215
+#: .\models.py:218
 msgid "Very high (more than 2 meter)"
 msgstr "Muy alto (más de 2 metros)"
 
-#: .\models.py:219
+#: .\models.py:222
 msgid ""
 "Please indicate which measures you have taken in your current home to "
 "protect your home against flood damage. (You can specify more than one.)"
@@ -154,86 +154,86 @@ msgstr ""
 "Indique qué medidas ha tomado para proteger su hogar contra daños por "
 "inundaciones. (Puede seleccionar más de una opción)"
 
-#: .\models.py:226
+#: .\models.py:229
 msgid "What is your household monthly income (after taxes)?"
 msgstr "¿Cuál es el ingreso mensual de su hogar (después de impuestos)?"
 
-#: .\models.py:227 .\models.py:270
+#: .\models.py:230 .\models.py:273
 msgid "Less than €500"
 msgstr "Menos de 500€"
 
-#: .\models.py:228 .\models.py:271
+#: .\models.py:231 .\models.py:274
 msgid "Between €500 and €999"
 msgstr "Entre 500€ y 999€"
 
-#: .\models.py:229
+#: .\models.py:232
 msgid "Between €1,000 and €1,499"
 msgstr "Entre 1.000€ y 1.499€"
 
-#: .\models.py:230
+#: .\models.py:233
 msgid "Between €1,500 and €1,999"
 msgstr "Entre 1.500€ y 1.999€"
 
-#: .\models.py:231
+#: .\models.py:234
 msgid "Between €2,000 and €2,499"
 msgstr "Entre 2.000€ y 2.499€"
 
-#: .\models.py:232
+#: .\models.py:235
 msgid "Between €2,500 and €2,999"
 msgstr "Entre 2.500€ y 2.999€"
 
-#: .\models.py:233
+#: .\models.py:236
 msgid "Between €3,000 and €3,499"
 msgstr "Entre 3.000€ y 3.499€"
 
-#: .\models.py:234
+#: .\models.py:237
 msgid "Between €3,500 and €3,999"
 msgstr "Entre 3.500€ y 3.999€"
 
-#: .\models.py:235
+#: .\models.py:238
 msgid "Between €4,000 and €4,499"
 msgstr "Entre 4.000€ y 4.499€"
 
-#: .\models.py:236
+#: .\models.py:239
 msgid "Between €4,500 and €4,999"
 msgstr "Entre 4.500€ y 4.999€"
 
-#: .\models.py:237
+#: .\models.py:240
 msgid "Between €5,000 and €5,499"
 msgstr "Entre 5.000€ y 5.499€"
 
-#: .\models.py:238
+#: .\models.py:241
 msgid "Between €5,500 and €5,999"
 msgstr "Entre 5.500€ y 5.999€"
 
-#: .\models.py:239
+#: .\models.py:242
 msgid "€6,000 or more"
 msgstr "6.000€ o más"
 
-#: .\models.py:240 .\models.py:281 .\models.py:301
+#: .\models.py:243 .\models.py:284 .\models.py:304
 msgid "Don’t know"
 msgstr "No sé"
 
-#: .\models.py:241 .\models.py:302
+#: .\models.py:244 .\models.py:305
 msgid "Rather not say"
 msgstr "Prefiero no decirlo"
 
-#: .\models.py:245
+#: .\models.py:248
 msgid ""
 "Please indicate which of the following best describes the home you live in."
 msgstr ""
 "Indique cuál de las siguientes opciones describe mejor la casa en la que "
 "vive."
 
-#: .\models.py:248
+#: .\models.py:251
 msgid "What is the highest level of education you have completed?"
 msgstr "¿Cuál es el nivel más alto de educación que ha completado?"
 
-#: .\models.py:251 .\templates\floodgame_nonvr\Welcome.html:53
+#: .\models.py:254 .\templates\floodgame_nonvr\Welcome.html:63
 msgid "What is your zipcode?"
 msgstr "¿Cuál es su código postal?"
 
-#: .\models.py:259
+#: .\models.py:262
 msgid ""
 "This is the end of the survey. In case you have comments, please leave them "
 "here."
@@ -241,19 +241,19 @@ msgstr ""
 "Este es el final de la encuesta. En caso de que tenga comentarios, por favor "
 "déjelos aquí."
 
-#: .\models.py:263
+#: .\models.py:266
 msgid "Have you ever been evacuated due to a threat of flooding?"
 msgstr "¿Alguna vez ha sido evacuado debido a una amenaza de inundación?"
 
-#: .\models.py:264
+#: .\models.py:267
 msgid "Yes"
 msgstr "Sí"
 
-#: .\models.py:264
+#: .\models.py:267
 msgid "No"
 msgstr "No"
 
-#: .\models.py:269
+#: .\models.py:272
 msgid ""
 "In the event of a future flood, how much damage would you expect to your "
 "home and property?"
@@ -261,111 +261,111 @@ msgstr ""
 "En caso de una inundación futura, ¿en cuánto estimaría los daños en su hogar "
 "y propiedad?"
 
-#: .\models.py:272
+#: .\models.py:275
 msgid "Between €1,000 and €4,999"
 msgstr "Entre 1.000€ y 4.999€"
 
-#: .\models.py:273
+#: .\models.py:276
 msgid "Between €5,000 and €9,999"
 msgstr "Entre 5.000€ y 9.999€"
 
-#: .\models.py:274
+#: .\models.py:277
 msgid "Between €10,000 and €24,999"
 msgstr "Entre 10.000€ y 24.999€"
 
-#: .\models.py:275
+#: .\models.py:278
 msgid "Between €25,000 and €49,999"
 msgstr "Entre 25.000€ y 49.999€"
 
-#: .\models.py:276
+#: .\models.py:279
 msgid "Between €50,000 and €74,499"
 msgstr "Entre 50.000€ y 74.499€"
 
-#: .\models.py:277
+#: .\models.py:280
 msgid "Between €75,000 and €99,999"
 msgstr "Entre 75.000€ y 99.999€"
 
-#: .\models.py:278
+#: .\models.py:281
 msgid "Between €100,000 and €249,999"
 msgstr "Entre 100.000€ y 249.999€"
 
-#: .\models.py:279
+#: .\models.py:282
 msgid "Between €250,000 and €499,999"
 msgstr "Entre 250.000€ y 499,999€"
 
-#: .\models.py:280
+#: .\models.py:283
 msgid "€500,000 or more"
 msgstr "500.000€ o más"
 
-#: .\models.py:284
+#: .\models.py:287
 msgid "What is the approximate market value of your home?"
 msgstr "¿Cuál es el valor de mercado aproximado de su hogar?"
 
-#: .\models.py:285
+#: .\models.py:288
 msgid "Less than €100,000"
 msgstr "Menos de 100.000€"
 
-#: .\models.py:286
+#: .\models.py:289
 msgid "Between €100,000 and €149,000"
 msgstr "Entre 100.000€ y 149.000€"
 
-#: .\models.py:287
+#: .\models.py:290
 msgid "Between €150,000 and €199,999"
 msgstr "Entre 150.000€ y 199.999€"
 
-#: .\models.py:288
+#: .\models.py:291
 msgid "Between €200,000 and €249,000"
 msgstr "Entre 200.000€ y 249.000€"
 
-#: .\models.py:289
+#: .\models.py:292
 msgid "Between €250,000 and €299,999"
 msgstr "Entre 250.000€ y 299.999€"
 
-#: .\models.py:290
+#: .\models.py:293
 msgid "Between €300,000 and €349,000"
 msgstr "Entre 300.000€ y 349.000€"
 
-#: .\models.py:291
+#: .\models.py:294
 msgid "Between €350,000 and €399,999"
 msgstr "Entre 350.000€ y 399.999€"
 
-#: .\models.py:292
+#: .\models.py:295
 msgid "Between €400,000 and €449,000"
 msgstr "Entre 400.000€ y 449.000€"
 
-#: .\models.py:293
+#: .\models.py:296
 msgid "Between €450,000 and €499,999"
 msgstr "Entre 450.000€ y 499.999€"
 
-#: .\models.py:294
+#: .\models.py:297
 msgid "Between €500,000 and €549,000"
 msgstr "Entre 500.000€ y 549.000€"
 
-#: .\models.py:295
+#: .\models.py:298
 msgid "Between €550,000 and €599,999"
 msgstr "Entre 550.000€ y 599.999€"
 
-#: .\models.py:296
+#: .\models.py:299
 msgid "Between €600,000 and €649,000"
 msgstr "Entre 600.000€ y 649.000€"
 
-#: .\models.py:297
+#: .\models.py:300
 msgid "Between €650,000 and €699,999"
 msgstr "Entre 650.000€ y 699.999€"
 
-#: .\models.py:298
+#: .\models.py:301
 msgid "Between €700,000 and €749,000"
 msgstr "Entre 700.000€ y 749.000€"
 
-#: .\models.py:299
+#: .\models.py:302
 msgid "Between €750,000 and €799,999"
 msgstr "Entre 750.000€ y 799.999€"
 
-#: .\models.py:300
+#: .\models.py:303
 msgid "€800,000 or more"
 msgstr "800.000€ o más"
 
-#: .\models.py:306
+#: .\models.py:309
 msgid ""
 "When a flood occurred in the scenario, I felt regret about not investing "
 "(more) in protection."
@@ -373,32 +373,32 @@ msgstr ""
 "Cuando ocurrió una inundación en el escenario, me arrepiento de no haber "
 "invertido (más) en protección."
 
-#: .\models.py:308 .\models.py:317 .\models.py:327 .\models.py:352
+#: .\models.py:311 .\models.py:320 .\models.py:330 .\models.py:358
 #: .\templates\floodgame_nonvr\Start.html:22
 msgid "Strongly disagree"
 msgstr "Muy en desacuerdo"
 
-#: .\models.py:309 .\models.py:318 .\models.py:328 .\models.py:353
+#: .\models.py:312 .\models.py:321 .\models.py:331 .\models.py:359
 #: .\templates\floodgame_nonvr\Start.html:23
 msgid "Disagree"
 msgstr "En desacuerdo"
 
-#: .\models.py:310 .\models.py:319 .\models.py:329 .\models.py:354
+#: .\models.py:313 .\models.py:322 .\models.py:332 .\models.py:360
 #: .\templates\floodgame_nonvr\Start.html:24
 msgid "Neither agree nor disagree"
 msgstr "Ni de acuerdo ni en desacuerdo"
 
-#: .\models.py:311 .\models.py:320 .\models.py:330 .\models.py:355
+#: .\models.py:314 .\models.py:323 .\models.py:333 .\models.py:361
 #: .\templates\floodgame_nonvr\Start.html:25
 msgid "Agree"
 msgstr "De acuerdo"
 
-#: .\models.py:312 .\models.py:321 .\models.py:331 .\models.py:356
+#: .\models.py:315 .\models.py:324 .\models.py:334 .\models.py:362
 #: .\templates\floodgame_nonvr\Start.html:26
 msgid "Strongly agree"
 msgstr "Muy de acuerdo"
 
-#: .\models.py:316
+#: .\models.py:319
 msgid ""
 "When no flood occurred in the scenario, I felt regret about paying for "
 "protection."
@@ -406,7 +406,7 @@ msgstr ""
 "Cuando en el escenario mi casa no se inundó, sentí remordimiento por haber "
 "pagado por la medida de protección."
 
-#: .\models.py:325
+#: .\models.py:328
 msgid ""
 "I would feel regret about not investing in protection, if a flood would have "
 "occurred in the scenario."
@@ -414,16 +414,20 @@ msgstr ""
 "Lamentaría no invertir en protección, si hubiera ocurrido una inundación en "
 "el escenario."
 
-#: .\models.py:335
+#: .\models.py:337
+msgid "Please indicate the size of your ground floor in square meters."
+msgstr "Indique el tamaño de su planta baja en metros cuadrados."
+
+#: .\models.py:341
 msgid "I am worried about the danger of flooding at my current residence."
 msgstr "Me preocupa el peligro de inundación en mi residencia actual."
 
-#: .\models.py:339
+#: .\models.py:345
 msgid "I am confident that the dikes in my country are maintained well."
 msgstr ""
 "Estoy seguro de que los diques en mi país reciben mantenimiento adecuado."
 
-#: .\models.py:343
+#: .\models.py:349
 msgid ""
 "The probability of flooding at my current residence is too low to be "
 "concerned about."
@@ -431,18 +435,18 @@ msgstr ""
 "La probabilidad de inundación en mi residencia actual es demasiado baja para "
 "preocuparse."
 
-#: .\models.py:347
+#: .\models.py:353
 msgid "I am worried about becoming infected by the coronavirus."
 msgstr ""
 
-#: .\models.py:351
+#: .\models.py:357
 msgid ""
 "It is the responsibility of a property owner to protect their property from "
 "flood damage."
 msgstr ""
 "Es responsabilidad del dueño proteger su propiedad de daños por inundaciones."
 
-#: .\models.py:360
+#: .\models.py:366
 msgid ""
 "How willing are you to give up money today in order to benefit from it in "
 "the future?"
@@ -450,21 +454,21 @@ msgstr ""
 "¿Qué tan dispuesto está a renunciar a dinero hoy para beneficiarse en el "
 "futuro?"
 
-#: .\models.py:363
+#: .\models.py:369
 msgid "In general, how willing or unwilling are you to take risks?"
 msgstr "En general, ¿qué tan dispuesto o poco dispuesto está a correr riesgos?"
 
-#: .\models.py:366
+#: .\models.py:372
 msgid "In the virtual environment I had a sense of 'being there'."
 msgstr ""
 
-#: .\models.py:369
+#: .\models.py:375
 msgid ""
 "Did you feel general discomfort, nauseous or dizzy in the virtual "
 "environment?"
 msgstr ""
 
-#: .\models.py:373
+#: .\models.py:379
 msgid ""
 "How effective is it to invest in flood protection measures that limit flood "
 "damage for your current home?"
@@ -472,27 +476,27 @@ msgstr ""
 "¿Qué tan efectivo es invertir en medidas de protección contra inundaciones "
 "que limiten el daño de inundación para su hogar actual?"
 
-#: .\models.py:374
+#: .\models.py:380
 msgid "Very effective"
 msgstr "Muy efectivo"
 
-#: .\models.py:375
+#: .\models.py:381
 msgid "Effective"
 msgstr "Efectivo"
 
-#: .\models.py:376
+#: .\models.py:382
 msgid "Neither effective nor ineffective"
 msgstr "Ni efectivo ni ineficaz"
 
-#: .\models.py:377
+#: .\models.py:383
 msgid "Ineffective"
 msgstr "Ineficaz"
 
-#: .\models.py:378
+#: .\models.py:384
 msgid "Very ineffective"
 msgstr "Muy ineficaz"
 
-#: .\models.py:383
+#: .\models.py:389
 msgid ""
 "How costly is it to take flood protection measures that limit flood damage "
 "for your current home?"
@@ -500,27 +504,27 @@ msgstr ""
 "¿Qué tan costoso es tomar medidas de protección contra inundaciones que "
 "limiten el daño de inundación para su hogar actual?"
 
-#: .\models.py:384
+#: .\models.py:390
 msgid "Very cheap"
 msgstr "Muy barato"
 
-#: .\models.py:385
+#: .\models.py:391
 msgid "Cheap"
 msgstr "Barato"
 
-#: .\models.py:386
+#: .\models.py:392
 msgid "Neither cheap nor costly"
 msgstr "Ni barato ni caro"
 
-#: .\models.py:387
+#: .\models.py:393
 msgid "Costly"
 msgstr "Caro"
 
-#: .\models.py:388
+#: .\models.py:394
 msgid "Very costly"
 msgstr "Muy caro"
 
-#: .\models.py:394
+#: .\models.py:400
 msgid ""
 "Aside from the cost, how difficult is it to take flood protection measures "
 "that limit flood damage for your current home?"
@@ -528,35 +532,35 @@ msgstr ""
 "Además del coste, ¿qué tan difícil es tomar medidas de protección contra "
 "inundaciones que limiten el daño de inundación para su hogar actual?"
 
-#: .\models.py:448
+#: .\models.py:462
 msgid "test scenario"
 msgstr "escenario de prueba"
 
-#: .\models.py:451
+#: .\models.py:465
 msgid "final scenario"
 msgstr "escenario final"
 
-#: .\pages.py:160
+#: .\pages.py:211
 msgid "Test scenario"
 msgstr "Escenario de prueba"
 
-#: .\pages.py:162
+#: .\pages.py:213
 msgid "Final scenario"
 msgstr "Escenario final"
 
-#: .\pages.py:189
+#: .\pages.py:240
 msgid "Investment"
 msgstr "Inversión"
 
-#: .\pages.py:213
+#: .\pages.py:264
 msgid "Floods"
 msgstr "Inundaciones"
 
-#: .\pages.py:238
+#: .\pages.py:289
 msgid "Overview of the past 25 years "
 msgstr "Resumen de los últimos 25 años "
 
-#: .\pages.py:268
+#: .\pages.py:319
 msgid "Thanks for your participation"
 msgstr "Gracias por su participación"
 
@@ -576,9 +580,143 @@ msgid "This was the final page."
 msgstr "Esta fue la última página."
 
 #: .\templates\floodgame_nonvr\Complete.html:27
+#: .\templates\floodgame_nonvr\Full.html:27
+#: .\templates\floodgame_nonvr\No.html:28
 #: .\templates\floodgame_nonvr\Thanks.html:25
 msgid "Close this window"
 msgstr "Cierre esta ventana"
+
+#: .\templates\floodgame_nonvr\Consent.html:6
+msgid "Informed consent"
+msgstr "Consentimiento informado"
+
+#: .\templates\floodgame_nonvr\Consent.html:23
+msgid "In this research we will collect some data."
+msgstr "En esta investigación recopilaremos algunos datos."
+
+#: .\templates\floodgame_nonvr\Consent.html:24
+msgid "Please find more information "
+msgstr "Por favor encuentre más información "
+
+#: .\templates\floodgame_nonvr\Consent.html:25
+msgid "here"
+msgstr "aquí"
+
+#: .\templates\floodgame_nonvr\Consent.html:26
+msgid "about the procedures."
+msgstr "acerca de los procedimientos."
+
+#: .\templates\floodgame_nonvr\Consent.html:35
+msgid "More information about this research"
+msgstr "Más información sobre esta investigación"
+
+#: .\templates\floodgame_nonvr\Consent.html:41
+msgid ""
+"The goal of this research is to better understand flood damage reduction "
+"investments in Europe."
+msgstr ""
+"El objetivo de esta investigación es comprender mejor las inversiones en "
+"reducción de daños por inundación en Europa."
+
+#: .\templates\floodgame_nonvr\Consent.html:43
+msgid "Participation is voluntary."
+msgstr "La participación es voluntaria."
+
+#: .\templates\floodgame_nonvr\Consent.html:44
+msgid "You can withdraw from the research at any moment."
+msgstr "Puede retirarse de la investigación en cualquier momento."
+
+#: .\templates\floodgame_nonvr\Consent.html:46
+msgid ""
+"Data will be stored anonymously at a local computer of Vrije Universiteit "
+"Amsterdam."
+msgstr ""
+"Los datos se almacenarán de forma anónima en un ordenador local de Vrije "
+"Universiteit Amsterdam."
+
+#: .\templates\floodgame_nonvr\Consent.html:47
+msgid ""
+"Data will be analyzed by VU researchers and will not be used for commercial "
+"purposes."
+msgstr ""
+"Los datos serán analizados por investigadores de VU y no serán utilizados "
+"con fines comerciales."
+
+#: .\templates\floodgame_nonvr\Consent.html:50
+msgid "If you finish the final survey, you are eligible for a large reward."
+msgstr ""
+"Si finaliza la encuesta completamente, es elegible para ganar un gran premio."
+
+#: .\templates\floodgame_nonvr\Consent.html:51
+#, fuzzy
+#| msgid ""
+#| "The computer will randomly select one participant for the large reward."
+msgid ""
+"The computer will randomly select one participant (out of maximum 500) for "
+"the large reward."
+msgstr "El ordenador seleccionará al azar a un participante para el premio."
+
+#: .\templates\floodgame_nonvr\Consent.html:52
+#, fuzzy
+#| msgid ""
+#| "This will take place after all participants have finished the survey, in "
+#| "October 2019."
+msgid ""
+"This will take place after all participants have finished the survey, in "
+"December 2020."
+msgstr ""
+"Esto pasará después de que todos los participantes hayan terminado la "
+"encuesta, en octubre de 2019."
+
+#: .\templates\floodgame_nonvr\Consent.html:53
+msgid ""
+"If you are selected for large payment, Panelinzicht will contact you via "
+"email to arrange the payment."
+msgstr ""
+"Si es seleccionado para pagos grandes, Panelinzicht se comunicará con usted "
+"por correo electrónico para organizar el pago."
+
+#: .\templates\floodgame_nonvr\Consent.html:54
+msgid ""
+"The size of the reward (up to &euro;650) depends on your answers in this "
+"survey."
+msgstr ""
+"El tamaño del premio (hasta &euro;650) depende de sus respuestas en esta "
+"encuesta."
+
+#: .\templates\floodgame_nonvr\Consent.html:55
+msgid ""
+"In case you have questions about the research, feel free to send an email to:"
+msgstr ""
+"En caso de que tenga preguntas sobre la investigación, no dude contactarnos "
+"en :"
+
+#: .\templates\floodgame_nonvr\Consent.html:56
+msgid ""
+"<a href=\"mailto:info.ivm@vu.nl?subject=Question about IVM survey\">info."
+"ivm@vu.nl</a>"
+msgstr ""
+"<a href=\"mailto:info.ivm@vu.nl?subject=Question about IVM survey\">info."
+"ivm@vu.nl</a>"
+
+#: .\templates\floodgame_nonvr\Consent.html:80
+msgid ""
+"I have read the information and agree with participation in this research"
+msgstr ""
+"He leído la información y estoy de acuerdo en participar en esta "
+"investigación"
+
+#: .\templates\floodgame_nonvr\Consent.html:92
+#: .\templates\floodgame_nonvr\FinalQuestions.html:339
+#: .\templates\floodgame_nonvr\FinalQuestions.html:341
+#: .\templates\floodgame_nonvr\Floods.html:174
+#: .\templates\floodgame_nonvr\Instructions.html:25
+#: .\templates\floodgame_nonvr\Overview.html:56
+#: .\templates\floodgame_nonvr\Results.html:32
+#: .\templates\floodgame_nonvr\Scenario.html:57
+#: .\templates\floodgame_nonvr\Start.html:56 .\templates\snippets\Form.html:19
+msgid "Next"
+msgstr "Siguiente"
 
 #: .\templates\floodgame_nonvr\Decision.html:25
 msgid "How much do you want to invest to reduce flood damage?"
@@ -779,17 +917,6 @@ msgstr "Apartamento en planta baja"
 msgid "Apartment on first floor or higher"
 msgstr "Apartamento en primer piso o superior"
 
-#: .\templates\floodgame_nonvr\FinalQuestions.html:339
-#: .\templates\floodgame_nonvr\FinalQuestions.html:341
-#: .\templates\floodgame_nonvr\Floods.html:174
-#: .\templates\floodgame_nonvr\Instructions.html:25
-#: .\templates\floodgame_nonvr\Overview.html:56
-#: .\templates\floodgame_nonvr\Results.html:32
-#: .\templates\floodgame_nonvr\Scenario.html:57
-#: .\templates\floodgame_nonvr\Start.html:56 .\templates\snippets\Form.html:19
-msgid "Next"
-msgstr "Siguiente"
-
 #: .\templates\floodgame_nonvr\Floods.html:45
 msgid "25 years later..."
 msgstr "25 años después…"
@@ -852,6 +979,19 @@ msgstr ""
 "una vez en los últimos 25 años, se indican en azul. Debido a que su casa no "
 "se inundó, no necesita pagar para recuperar el daño."
 
+#: .\templates\floodgame_nonvr\Full.html:6
+#: .\templates\floodgame_nonvr\No.html:6
+msgid "Thank you"
+msgstr "Gracias"
+
+#: .\templates\floodgame_nonvr\Full.html:17
+msgid ""
+"Thank you for your interest in this research. <br><br> Unfortunately, we "
+"already received enough responses.<br><br> See you next time."
+msgstr ""
+"Gracias por su interés en esta investigación. <br> <br> Desafortunadamente, "
+"ya recibimos suficientes respuestas. <br> <br> Nos vemos la próxima vez."
+
 #: .\templates\floodgame_nonvr\Instructions.html:6
 msgid "Information about the scenario"
 msgstr "Información sobre el escenario"
@@ -860,6 +1000,15 @@ msgstr "Información sobre el escenario"
 msgid "We will start with a test scenario to get familiar with the game."
 msgstr ""
 "Comenzaremos con un escenario de prueba para familiarizarnos con el juego."
+
+#: .\templates\floodgame_nonvr\No.html:17
+msgid ""
+"Thank you for your interest in this research. <br><br> Unfortunately, you "
+"are not part of the target group of this research.<br><br> See you next time."
+msgstr ""
+"Gracias por su interés en esta investigación. <br> <br> Desafortunadamente, "
+"usted no es parte del grupo objetivo de esta investigación. <br> <br> Nos "
+"vemos la próxima vez."
 
 #: .\templates\floodgame_nonvr\Overview.html:17
 msgid ""
@@ -1041,7 +1190,7 @@ msgstr "Sí (propietario)"
 msgid "No (tenant)"
 msgstr "No (inquilino)"
 
-#: .\templates\floodgame_nonvr\Welcome.html:74
+#: .\templates\floodgame_nonvr\Welcome.html:84
 msgid "Start"
 msgstr ""
 
@@ -1206,9 +1355,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Indique el tipo de relación que tiene con las personas que invirtieron en "
 #~ "una o más medidas de reducción de daños."
-
-#~ msgid "Please indicate the size of your ground floor in square meters."
-#~ msgstr "Indique el tamaño de su planta baja en metros cuadrados."
 
 #~ msgid "Do you currently live in a flood-prone area?"
 #~ msgstr "¿Actualmente vive en un área propensa a inundaciones?"
@@ -1375,101 +1521,6 @@ msgstr ""
 #~ "\"><b>Por favor denos su mejor estimación. Cuando su estimación resulta "
 #~ "correcta, será elegible para un bono extra (&euro;20).</b></p>"
 
-#~ msgid "Informed consent"
-#~ msgstr "Consentimiento informado"
-
-#~ msgid "In this research we will collect some data."
-#~ msgstr "En esta investigación recopilaremos algunos datos."
-
-#~ msgid "Please find more information "
-#~ msgstr "Por favor encuentre más información "
-
-#~ msgid "here"
-#~ msgstr "aquí"
-
-#~ msgid "about the procedures."
-#~ msgstr "acerca de los procedimientos."
-
-#~ msgid "More information about this research"
-#~ msgstr "Más información sobre esta investigación"
-
-#~ msgid ""
-#~ "The goal of this research is to better understand flood damage reduction "
-#~ "investments in Europe."
-#~ msgstr ""
-#~ "El objetivo de esta investigación es comprender mejor las inversiones en "
-#~ "reducción de daños por inundación en Europa."
-
-#~ msgid "Participation is voluntary."
-#~ msgstr "La participación es voluntaria."
-
-#~ msgid "You can withdraw from the research at any moment."
-#~ msgstr "Puede retirarse de la investigación en cualquier momento."
-
-#~ msgid ""
-#~ "Data will be stored anonymously at a local computer of Vrije Universiteit "
-#~ "Amsterdam."
-#~ msgstr ""
-#~ "Los datos se almacenarán de forma anónima en un ordenador local de Vrije "
-#~ "Universiteit Amsterdam."
-
-#~ msgid ""
-#~ "Data will be analyzed by VU researchers and will not be used for "
-#~ "commercial purposes."
-#~ msgstr ""
-#~ "Los datos serán analizados por investigadores de VU y no serán utilizados "
-#~ "con fines comerciales."
-
-#~ msgid "If you finish the final survey, you are eligible for a large reward."
-#~ msgstr ""
-#~ "Si finaliza la encuesta completamente, es elegible para ganar un gran "
-#~ "premio."
-
-#~ msgid ""
-#~ "The computer will randomly select one participant for the large reward."
-#~ msgstr "El ordenador seleccionará al azar a un participante para el premio."
-
-#~ msgid ""
-#~ "This will take place after all participants have finished the survey, in "
-#~ "October 2019."
-#~ msgstr ""
-#~ "Esto pasará después de que todos los participantes hayan terminado la "
-#~ "encuesta, en octubre de 2019."
-
-#~ msgid ""
-#~ "If you are selected for large payment, Panelinzicht will contact you via "
-#~ "email to arrange the payment."
-#~ msgstr ""
-#~ "Si es seleccionado para pagos grandes, Panelinzicht se comunicará con "
-#~ "usted por correo electrónico para organizar el pago."
-
-#~ msgid ""
-#~ "The size of the reward (up to &euro;650) depends on your answers in this "
-#~ "survey."
-#~ msgstr ""
-#~ "El tamaño del premio (hasta &euro;650) depende de sus respuestas en esta "
-#~ "encuesta."
-
-#~ msgid ""
-#~ "In case you have questions about the research, feel free to send an email "
-#~ "to:"
-#~ msgstr ""
-#~ "En caso de que tenga preguntas sobre la investigación, no dude "
-#~ "contactarnos en :"
-
-#~ msgid ""
-#~ "<a href=\"mailto:info.ivm@vu.nl?subject=Question about IVM survey\">info."
-#~ "ivm@vu.nl</a>"
-#~ msgstr ""
-#~ "<a href=\"mailto:info.ivm@vu.nl?subject=Question about IVM survey\">info."
-#~ "ivm@vu.nl</a>"
-
-#~ msgid ""
-#~ "I have read the information and agree with participation in this research"
-#~ msgstr ""
-#~ "He leído la información y estoy de acuerdo en participar en esta "
-#~ "investigación"
-
 #~ msgid ""
 #~ "You finished your prediction. <br> You can make <u><strong>your own</"
 #~ "strong></u> investment decision in the next decision screen."
@@ -1592,26 +1643,6 @@ msgstr ""
 
 #~ msgid "More information"
 #~ msgstr "Más información"
-
-#~ msgid "Thank you"
-#~ msgstr "Gracias"
-
-#~ msgid ""
-#~ "Thank you for your interest in this research. <br><br> Unfortunately, we "
-#~ "already received enough responses.<br><br> See you next time."
-#~ msgstr ""
-#~ "Gracias por su interés en esta investigación. <br> <br> "
-#~ "Desafortunadamente, ya recibimos suficientes respuestas. <br> <br> Nos "
-#~ "vemos la próxima vez."
-
-#~ msgid ""
-#~ "Thank you for your interest in this research. <br><br> Unfortunately, you "
-#~ "are not part of the target group of this research.<br><br> See you next "
-#~ "time."
-#~ msgstr ""
-#~ "Gracias por su interés en esta investigación. <br> <br> "
-#~ "Desafortunadamente, usted no es parte del grupo objetivo de esta "
-#~ "investigación. <br> <br> Nos vemos la próxima vez."
 
 #~ msgid "Questionnaire"
 #~ msgstr "Cuestionario"

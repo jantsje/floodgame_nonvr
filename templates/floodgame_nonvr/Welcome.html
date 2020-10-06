@@ -33,22 +33,34 @@
 
        Al uw antwoorden zijn strikt vertrouwelijk en zullen niet voor commerciële doeleinden worden gebruikt.
 <br>
-       Allereerst twee vragen om te bevestigen dat u in de juiste doelgroep valt.
+       Allereerst drie vragen om te bevestigen dat u in de juiste doelgroep valt.
 <br>
        <br> <strong>Bent u eigenaar van het huis of appartement waarin u woont?</strong>
 
 {% for field in form %}
        {% if field.name == "homeowner" %}</p><p>
             <input type="radio" required name="homeowner" value=True id="1">
-           <label for="1">{% trans "Yes (homeowner)" %}  </label>
-            <input type="radio"  name="homeowner" value=False id="0">
+           <label for="1">{% trans "Yes (homeowner)" %}  </label> &#8195;
+           <input type="radio"  name="homeowner" value=False id="0">
            <label for="0">{% trans "No (tenant)" %}</label>
 
-       <br>
-              {% endif %}
+       <br><br>
+        {% elif field.name == "floor_size" %}
+           <strong> {{field.label}} </strong>
+           <div class="row"><div class="col-md-2"><div class="input-group-prepend"><input class="form-control" name="floor_size" type="number" autocomplete="off" required>
+               <div class="input-group-text">m2</div>
+        </div></div></div>
+
+
+         {% endif %}
        {% endfor %}
 
 <br>
+
+
+
+
+
 <strong>
        {% blocktrans trimmed %}
            What is your zipcode?

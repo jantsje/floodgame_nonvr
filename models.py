@@ -65,6 +65,9 @@ class Subsession(BaseSubsession):
                 p.participant.vars["mitigated"] = False
                 p.participant.vars["conversion"] = sconfig.get('real_world_currency_per_point')
                 p.participant.vars["demo"] = False
+                self.session.vars["quota_full"] = False
+                p.participant.vars["target_group"] = 'not answered yet'
+                p.participant.vars["completed"] = False
                 p.participant.vars["timespent"] = ''
                 p.participant.vars["belief"] = 999
                 p.participant.vars["insurance_choice"] = False
@@ -331,6 +334,9 @@ class Player(BasePlayer):
                  (5, _("Strongly agree"))
                  ])
 
+    floor_size = models.IntegerField(label=_("Please indicate the size of your ground floor in square meters."),
+                                     help_text="m2")
+
     worry = models.IntegerField(
         label=_("I am worried about the danger of flooding at my current residence."),
         blank=True)
@@ -400,6 +406,14 @@ class Player(BasePlayer):
                  (5, _("Very difficult")),
                  (99, _("Don't know"))]
     )
+
+    def store_consent(self):
+        if not self.consent:
+            self.participant.vars["target_group"] = False
+
+    def store_complete(self):
+        self.session.vars["completes"] = self.session.vars["completes"] + 1
+        self.participant.vars["completed"] = True
 
     def store_instructions(self):
         self.total_opened = self.participant.vars["opened_instructions"]
@@ -502,6 +516,20 @@ class Player(BasePlayer):
                 'payoff_if_selected': payoff_if_selected,
                 'bigprize': self.bigprize,
                 }
+
+    def check_quota(self):
+        if self.round_number == 1:
+            self.participant.vars["quota_full"] = False
+            if self.participant.id_in_session == 1:  # meaning it is the first participant of th session
+                self.session.vars["completes"] = 0
+            if self.session.vars["completes"] >= self.session.config["quota"]:
+                self.participant.vars["quota_full"] = True
+            else:
+                self.participant.vars["quota_full"] = False
+
+    def check_target_group(self):
+        if self.floor_size < 1:
+            self.participant.vars["target_group"] = False
 
     def opened_instructions(self):
         self.participant.vars["opened_instructions"] += self.opened
