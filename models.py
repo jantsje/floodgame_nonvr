@@ -412,7 +412,7 @@ class Player(BasePlayer):
             self.participant.vars["target_group"] = False
 
     def store_complete(self):
-        self.session.vars["completes"] = self.session.vars["completes"] + 1
+        self.session.vars["completes.txt"] = self.session.vars["completes"] + 1
         self.participant.vars["completed"] = True
 
     def store_instructions(self):
